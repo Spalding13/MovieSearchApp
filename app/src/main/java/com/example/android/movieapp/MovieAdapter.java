@@ -38,7 +38,7 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
 
         Picasso.get()
                 .load(currentMovie.getmImage())
-                .resize(1300, 1600)
+                .resize(300, 300)
                 .into(image);
 
         String Title = currentMovie.getmTitle();

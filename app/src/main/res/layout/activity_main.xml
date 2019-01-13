@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_marginTop="129dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginRight="16dp"
         android:orientation="vertical">
-        <EditText
-            android:id="@+id/search_bar"
+
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:colorControlActivated="@color/colorPrimary"
+                android:colorControlNormal="@color/colorPrimaryDark"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
         <Button
             android:id="@+id/search_button"
-            android:text="Search"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="8dp"
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content" />
+            android:text="Search" />
     </LinearLayout>
 
 </LinearLayout>

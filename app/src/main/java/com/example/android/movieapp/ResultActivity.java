@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -28,13 +29,13 @@ public class ResultActivity extends AppCompatActivity implements LoaderManager.L
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        ListView listView = findViewById(R.id.list);
+        GridView listView = findViewById(R.id.list);
         mEmptyView = findViewById(R.id.empty_view);
         mProgressBar = findViewById(R.id.progress_bar);
-
+        setTitle("Results for: ");
         Intent intent = getIntent();
         SEARCH = intent.getStringExtra("SEARCH");
-
+        setTitle("Results for: "+SEARCH);
         getLoaderManager().initLoader(0, null, this);
 
         mMovieAdapter = new MovieAdapter(this, new ArrayList<Movie>());
