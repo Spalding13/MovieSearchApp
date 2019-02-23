@@ -1,20 +1,23 @@
 # MovieSearchApp
-Use your Android device to search for movie titles on IMDB using the OMDb API. 
+  Use your Android device to search for movie titles on IMDB using the OMDb API. 
 The result is a grid page of small panels with the movie title, year of production and a movie poster.
 Images are loaded with the help with the Picasso, a powerful library for downloading and caching images for Android.
 Styled to match the MovieSearch wep application: https://github.com/Spalding13/MovieSearch 
 
 This app uses the Open Movie Database API for data: http://www.omdbapi.com/ 
 
-A mobile version will be released soon for Android devices!
+*Tested with Samsung Galaxy S8
 
 # Screenshots
 ### Home Page:
-* A basic form to submit request to the API
+* A LinearLayout showing a greeting message, an EditText view to type in the movie title and a button to launche the request:
+![alt text](http://url/to/panel1.png)
+
 
 
 ### Results Page:
-* The result from the request
+* A GridView layout showing panels in two rows, containing the movie title and year in TextViews:
+![alt text](http://url/to/panel2.png)
 
 
 ## Built With
