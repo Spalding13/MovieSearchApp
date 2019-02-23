@@ -1,75 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
->
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_margin="8dp"
-    android:padding="8dp"
-    android:background="@drawable/border"
-    >
+    android:padding="4dp"
+    android:background="@color/colorPrimaryDark">
 
     <LinearLayout
-        android:layout_width="160dp"
-        android:layout_height="75dp"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:padding="8dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="horizontal"
-        android:background="@drawable/borderframe"
-        >
-
-
-        <TextView
-            android:id="@+id/movie_title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Star Wars"
-            style="@style/title_text"
-
-            />
-
-        <View
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@android:color/black"
-            />
-
-        <TextView
-            android:id="@+id/movie_year"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="1994"
-            style="@style/title_text"
-            />
-
-    </LinearLayout>
-
-    <ImageView
-        android:paddingBottom="1dp"
-        android:paddingTop="1dp"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:id="@+id/movie_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher_round"
-        android:background="@drawable/borderframe"
-        />
+        android:layout_margin="8dp"
+        android:background="@drawable/border"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="4dp"
+       >
+
+        <LinearLayout
+            style="@style/text_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/borderframe"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:textAlignment="center">
+
+
+            <TextView
+                android:id="@+id/movie_title"
+                style="@style/title_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="Star Wars"
+                android:textColor="@android:color/white" />
+
+            <View
+                style="@style/text_shadow"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/white"
+                android:elevation="4dp"
+
+                />
+
+            <TextView
+                android:id="@+id/movie_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1994"
+                android:textColor="@android:color/white"
+                style="@style/title_text"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/borderframe"
+            android:paddingLeft="4dp"
+            android:paddingTop="1dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="1dp"
+            android:src="@mipmap/ic_launcher_round" />
 
     </LinearLayout>
 </LinearLayout>

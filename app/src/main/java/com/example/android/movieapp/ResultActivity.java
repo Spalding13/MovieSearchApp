@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.GridView;
-import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -26,8 +25,7 @@ public class ResultActivity extends AppCompatActivity implements LoaderManager.L
     private TextView mEmptyView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle savedInstanceState) {        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         GridView listView = findViewById(R.id.list);
         mEmptyView = findViewById(R.id.empty_view);
