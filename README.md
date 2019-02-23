@@ -34,5 +34,5 @@ This app uses the Open Movie Database API for data: http://www.omdbapi.com/
 * Use the results to get more detailed information for each movie by tapping on a panel. Information such as movie synopsis, budged, etc.
 
 ### Acknowledgments
-OMDb - Open Movie Database API
-Picasso - https://square.github.io/picasso/
+* OMDb - Open Movie Database API
+* Picasso - https://square.github.io/picasso/
