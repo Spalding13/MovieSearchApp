@@ -35,4 +35,4 @@ This app uses the Open Movie Database API for data: http://www.omdbapi.com/
 
 ### Acknowledgments
 OMDb - Open Movie Database API
-Picassi - https://square.github.io/picasso/
+Picasso - https://square.github.io/picasso/
