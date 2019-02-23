@@ -11,13 +11,13 @@ This app uses the Open Movie Database API for data: http://www.omdbapi.com/
 # Screenshots
 ### Home Page:
 * A LinearLayout showing a greeting message, an EditText view to type in the movie title and a button to launche the request:
-![alt text](http://url/to/panel1.png)
+![alt text](http://url/to/panel1.jpg)
 
 
 
 ### Results Page:
 * A GridView layout showing panels in two rows, containing the movie title and year in TextViews:
-![alt text](http://url/to/panel2.png)
+![alt text](http://url/to/panel2.jpg)
 
 
 ## Built With
