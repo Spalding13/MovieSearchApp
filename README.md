@@ -10,7 +10,7 @@ This app uses the Open Movie Database API for data: http://www.omdbapi.com/
 
 # Screenshots
 ### Home Page:
-* A LinearLayout showing a greeting message, an EditText view to type in the movie title and a button to launche the request:
+* A LinearLayout showing a greeting message, an EditText view and a button to launch the request:
 ![Alt text](rsz_1panel1.jpg?raw=true)
 
 
