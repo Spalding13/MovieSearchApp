@@ -6,7 +6,7 @@ Styled to match the MovieSearch wep application: https://github.com/Spalding13/M
 
 This app uses the Open Movie Database API for data: http://www.omdbapi.com/ 
 
-*Tested with Samsung Galaxy S8
+* Tested with Samsung Galaxy S8
 
 # Screenshots
 ### Home Page:
@@ -25,6 +25,13 @@ This app uses the Open Movie Database API for data: http://www.omdbapi.com/
 * Android Studio
 * Picasso
 
+### Possible issues
+* Some oversized images might fail to load correctly. Possible reason might be in image resizing by the Picasso library
+* The layouts might clip over for smaller devices. 
+
+### Future Improvements
+* Add more search options
+* Use the results to get more detailed information for each movie by tapping on a panel. Information such as movie synopsis, budged, etc.
 
 ### Acknowledgments
 OMDb - Open Movie Database API
